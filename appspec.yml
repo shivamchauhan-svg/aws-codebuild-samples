@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
+  - source: / https://github.com/shivamchauhan-svg/aws-codebuild-samples.git
     destination: /home/ec2-user/calculator
 
 permissions:
