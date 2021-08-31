@@ -8,18 +8,18 @@ files:
 permissions:
   - object: /
     pattern: "**"
-    owner: ubuntu
-    group: ubuntu
+    owner: root
+    group: root
 hooks:
   BeforeInstall:
     - location: deploy_scripts/install.sh
-      runas: ubuntu
+      runas: root
   ApplicationStop:
     - location: deploy_scripts/stop.sh
-      runas: ubuntu
+      runas: root
   ApplicationStart:
     - location: deploy_scripts/start.sh
-      runas: ubuntu
+      runas: root
   ValidateService:
     - location: deploy_scripts/validate.sh
-      runas: ubuntu
+      runas: root
