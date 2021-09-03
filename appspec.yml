@@ -8,18 +8,18 @@ files:
 permissions:
   - object: /
     pattern: "**"
-    owner: root
-    group: root
+    owner: ec2-user
+    group: ec2-user
 hooks:
   BeforeInstall:
     - location: deploy_scripts/install.sh
-      runas: root
+      runas: ec2-user
   ApplicationStop:
     - location: deploy_scripts/stop.sh
-      runas: root
+      runas: ec2-user
   ApplicationStart:
     - location: deploy_scripts/start.sh
-      runas: root
+      runas: ec2-user
   ValidateService:
     - location: deploy_scripts/validate.sh
-      runas: root
+      runas: ec2-user
