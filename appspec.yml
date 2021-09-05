@@ -20,6 +20,3 @@ hooks:
   ApplicationStart:
     - location: deploy_scripts/start.sh
       runas: root
-  ValidateService:
-    - location: deploy_scripts/validate.sh
-      runas: root
